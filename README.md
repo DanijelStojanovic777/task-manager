@@ -81,7 +81,7 @@ A simple Task Manager application for managing tasks and users, created as a *de
 ## *Project Highlights*
 
 - Automatic dueDate assignment
-- Task assignment to users with user existence validation
+- Assign tasks only to users that exist (validation included)
 - Clean, readable code and structure
 - API tested with Postman
 
