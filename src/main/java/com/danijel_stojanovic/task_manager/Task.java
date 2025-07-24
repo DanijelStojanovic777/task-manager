@@ -1,4 +1,7 @@
 package com.danijel_stojanovic.task_manager;
+import jakarta.validation.constraints.FutureOrPresent;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,10 +15,15 @@ import java.time.LocalDate;
 public class Task {
 
     private Long id;
+    @NotBlank(message = "Tittle is required")
     private String title;
+    @NotBlank(message = "Description is required")
     private String description;
+    @NotNull(message = "Priority is required")
     private Priority priority;
+    @NotNull(message = "Priority is required")
     private Status status;
+    @FutureOrPresent(message = "Due date must be today or in the future")
     private LocalDate dueDate;
     private User assignedUser;
 

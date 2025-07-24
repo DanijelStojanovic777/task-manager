@@ -2,6 +2,7 @@ package com.danijel_stojanovic.task_manager.controller;
 
 import com.danijel_stojanovic.task_manager.User;
 import com.danijel_stojanovic.task_manager.service.UserService;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,12 +16,13 @@ public class UserController {
     private final UserService userService;
 
 
+
     public UserController(UserService userService) {
         this.userService = userService;
     }
 
     @PostMapping
-    public User createUser(@RequestBody User user) {
+    public User createUser(@Valid @RequestBody User user) {
         return userService.createUser(user);
     }
 
