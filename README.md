@@ -37,7 +37,7 @@ A simple Task Manager application for managing tasks and users, created as a *de
 
 ---
 
-# API Endpoints
+## *API Endpoints*
 
  ### **User**
 - POST /api/users - Create a user
@@ -54,7 +54,7 @@ A simple Task Manager application for managing tasks and users, created as a *de
 
 ---
 
-# *Example JSON Payloads*
+## *Example JSON Payloads*
 
 ### **User:**
 ```json
@@ -63,7 +63,7 @@ A simple Task Manager application for managing tasks and users, created as a *de
 "email": "Dusan@example.com"
 }
 ```
-### *Task:*
+### **Task:**
 ```json
 {
   "title": "New task",
@@ -74,16 +74,16 @@ A simple Task Manager application for managing tasks and users, created as a *de
   "assignedUser": { "id": 1 }
 }
 ```
-  (If you do not provide dueDate, it will be automatically set to today + 7 days)
+- If you do not provide dueDate, it will be automatically set to today + 7 days)
 
 ---
 
 ## *Project Highlights*
 
-  -Automatic dueDate assignment
-  -Task assignment to users with user existence validation
-  -Clean, readable code and structure
-  -API tested with Postman
+- Automatic dueDate assignment
+- Task assignment to users with user existence validation
+- Clean, readable code and structure
+- API tested with Postman
 
 Note: This project was created as a technical demo for interviews and learning purposes
 
@@ -91,9 +91,9 @@ Note: This project was created as a technical demo for interviews and learning p
 
 ## Author
 
-  Danijel Stojanovic
-  danijel_s97@outlook.com
-  LinkedIn: https://www.linkedin.com/in/danijel-stojanovic-50278a92/
+- Danijel Stojanovic
+- Email: danijel_s97@outlook.com
+- LinkedIn: https://www.linkedin.com/in/danijel-stojanovic-50278a92/
 
 
 
