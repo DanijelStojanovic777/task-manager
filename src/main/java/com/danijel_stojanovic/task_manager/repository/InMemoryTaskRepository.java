@@ -1,6 +1,7 @@
 package com.danijel_stojanovic.task_manager.repository;
 
 import com.danijel_stojanovic.task_manager.Task;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 import java.util.ArrayList;
@@ -9,6 +10,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicLong;
 
+@Service
 public class InMemoryTaskRepository implements TaskRepository {
 
     private final Map<Long, Task> tasks = new HashMap<>();

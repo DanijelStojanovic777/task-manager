@@ -35,8 +35,8 @@ public class TaskManagerApplication {
 	}
 
 	@Bean
-	public TaskService taskService(TaskRepository taskRepository) {
-		return new InMemoryTaskService(taskRepository);
+	public TaskService taskService(TaskRepository taskRepository, UserRepository userRepository) {
+		return new InMemoryTaskService(taskRepository, userRepository);
 	}
 
 }
